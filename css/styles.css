@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color: rgb(189, 189, 189);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h3 {
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 1;
+  margin:0;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+
+
+
+/* ---- layout ---- */
+
+#site-main {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  #site-main {
+    height: 100vh;
+  }
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+
+
+/* ---- components ---- */
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper-center {
+    flex-direction: row;
+  }
+}
+
+
+/* ---- section ---- */
+
+section.site-intro {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  section.site-intro {
+    width: 800px;
+  }
+}
+
+section.site-intro article{
+  width: 100%;
+  border-bottom: 1px solid rgb(207, 206, 206);
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  section.site-intro article{
+    width: 27.5%;
+  }
+}
+
+section.graphic-container{
+  position: relative;
+  padding-bottom: 10px;
+}
+
+section.graphic-container h3{
+  position: absolute;
+  top:0;
+  width:100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+section.graphic-container h3 span{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top:5px;
+  color: rgb(78, 78, 78);
+}
+
+section.graphic-container .graphics div:first-child{
+  text-align: center;
+}
+
+section.info-container{
+  padding-bottom: 5px;
+  margin-top: -20px;
+}
+
+section.info-container div:nth-child(2){
+  text-align: right;
+}
+
+section.info-container div p{
+  display: inline;
+  letter-spacing:-0.3px;
+}
+
+section.info-container div p:nth-child(2){
+  margin-right: 10px;
+  color: rgb(78, 78, 78);
+}
+
+
+
